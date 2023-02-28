@@ -1,0 +1,663 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Subway Surfers Unblocked - UBG365</title>
+
+    <script src="https://partner.googleadservices.com/gampad/cookie.js?domain=ubg365.github.io&amp;callback=_gfp_s_&amp;client=ca-pub-5671039626108784"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202302160101/show_ads_impl_fy2021.js?bust=31072532" id="google_shimpl"></script><script type="text/javascript" src="4399.z.js"></script>
+    <script>
+        window.config = {
+            loader: 'unity',
+            debug: false,
+            maxRatio: 16 / 9,
+            minRatio: 9 / 16,
+
+            title: 'Subway Surfers: San Francisco',
+
+            unityVersion: '2019.4.18f1',
+            unityWebglBuildUrl: 'Build\/SanFrancisco\/SanFrancisco.json',
+
+            fileSize: 35,
+            cachedDecompressedFileSizes: {
+                'SanFrancisco.asm.code.unityweb': 9077143,
+                'SanFrancisco.asm.framework.unityweb': 86369,
+                'SanFrancisco.asm.memory.unityweb': 951447,
+                'SanFrancisco.data.unityweb': 18323917,
+                'SanFrancisco.wasm.code.unityweb': 7279617,
+                'SanFrancisco.wasm.framework.unityweb': 90693,
+            },
+        };
+    </script>
+<script src="/js/main.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WJMM73SFL1"></script><script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WJMM73SFL1');</script>
+<script src="poki-sdk-core-v2.234.2.js" type="text/javascript" crossorigin="anonymous"></script><style type="text/css">* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #002B50;
+    font-family: Torus, Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+#game-container {
+    position: absolute !important;
+    left: 50%;
+    top: 50%;
+    display: none;
+}
+
+#game,
+#game canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#loader {
+    width: 100%;
+    height: 100%;
+}
+
+/**
+   * Slideshow
+   */
+
+#slideshow {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    user-select: none;
+}
+
+@font-face {
+    font-family: Torus;
+    src:
+        url('./fonts/torus-bold-webfont.woff2') format('woff2'),
+        url('//a.poki.com/fonts/torus-bold-webfont.woff') format('woff');
+    font-style: bold;
+    font-weight: 700;
+}
+
+/**
+   * Slideshow - Top section
+   */
+#progress-spinner{
+    margin-left: 0;
+    margin-top: 0;
+    left: 0px;
+    display:none;
+    transform: translate(100%, -50%);
+    width:10vh;
+}
+#progress-spinner >div{
+    width:2vh;
+    height:2vh;
+}
+
+
+#slideshow-top {
+    display: flex;
+    margin: 2.5vh 0;
+}
+
+#slideshow-top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#game-title, #progress-comment {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    font-size:2vh;
+}
+
+#progress-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    transition: 0.2s ease-out all;
+}
+
+#progress-container.done {
+    opacity: 0;
+}
+
+#progress-bar {
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+}
+
+#progress-fill {
+    background: #3CF7DC;
+    height: 100%;
+    transition: 0.2s ease-out all;
+    animation-name: fillColor;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes fillColor {
+    0% {
+        background-color: #3CF7DC;
+    }
+
+    25% {
+        background-color: #FFA9BE;
+    }
+
+    50% {
+        background-color: #FFDC00;
+    }
+
+    75% {
+        background-color: #E0AEF5;
+    }
+
+    100% {
+        background-color: #3CF7DC;
+    }
+}
+
+@media (orientation: portrait) {
+    
+
+    #game-title h1 {
+        font-size: 2vh;
+    }
+
+    #slideshow-top {
+        width: 70vw;
+    }
+
+    #progress-bar {
+        height: 1vh;
+        border-radius: 0.5vh;
+    }
+
+    #progress-fill {
+        border-radius: 0.5vh;
+    }
+
+    
+
+    #progress-amount {
+        font-size: 2vh;
+        margin-left: 1.5vh;
+        width: 3vh;
+    }
+}
+
+@media (orientation: landscape) {
+    
+
+    #game-title h1 {
+        font-size: 3vh;
+    }
+
+    #slideshow-top {
+        width: 50vw;
+    }
+
+    #progress-bar {
+        height: 1.2vh;
+        border-radius: 0.6vh;
+    }
+
+    #progress-fill {
+        border-radius: 0.6vh;
+    }
+
+    
+
+    #progress-amount {
+        font-size: 2.5vh;
+        margin-left: 1.875vh;
+        width: 3.75vh;
+    }
+}
+
+/**
+   * Slideshow - Images section
+   */
+
+#slideshow-images {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#slideshow-images .image {
+    position: absolute;
+    box-shadow: 0 2.4vh 3.6vh rgba(0, 0, 0, 0.4);
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    perspective: 1000px;
+    left: 0;
+    overflow: hidden;
+    /* border: 1vh solid; */
+}
+
+#slideshow-images .image img {
+    width: 100%;
+    height: 100%;
+}
+
+#slideshow-images .image:nth-of-type(1n) {
+    border-color: #3BE8B0;
+}
+
+#slideshow-images .image:nth-of-type(2n) {
+    border-color: #FF6D92;
+}
+
+#slideshow-images .image:nth-of-type(3n) {
+    border-color: #A177FF;
+}
+
+#slideshow-images .image:nth-of-type(4n) {
+    border-color: #FFD200;
+}
+
+#slideshow-images .left {
+    z-index: 2;
+}
+#slideshow-images .right {
+    z-index: 1;
+}
+
+#slideshow-images .middle {
+    z-index: 3;
+}
+
+#slideshow-images .left img,
+#slideshow-images .right img {
+    transform: scale(1.05);
+}
+
+#slideshow-images .left img,
+#slideshow-images .right img,
+#slideshow-images .fromLeft img,
+#slideshow-images .fromRight img {
+    filter: blur(1vh);
+}
+
+#slideshow-images .inactive {
+    display: none;
+}
+
+#slideshow-images .inactive.fromLeft,
+#slideshow-images .inactive.fromRight {
+    display: block;
+}
+
+/**
+   * Slideshow - Navigation section
+   */
+
+#slideshow-nav {
+    display: flex;
+    justify-content: center;
+    margin: 2.5vh 0;
+}
+
+#slideshow-nav .bullet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slideshow-nav .bullet:after {
+    content: '';
+    background: #fff;
+    border-radius: 0.4vh;
+    width: 0.8vh;
+    height: 0.8vh;
+}
+
+#slideshow-nav .bullet.active:after {
+    background: #009CFF;
+}
+
+#slideshow-nav .bullet {
+    width: 2.5vh;
+    height: 2.5vh;
+}
+
+#slideshow-nav .bullet:after {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+/**
+   * Pop-in animation
+   */
+
+#slideshow-nav,
+#slideshow-images {
+    opacity: 0;
+    transition: 0.4s all ease-out;
+    transform: translateY(2vh);
+    perspective: 1000px;
+    transition-delay: 400ms;
+}
+
+#slideshow-nav {
+    transition-delay: 600ms;
+}
+
+#slideshow.active #slideshow-images,
+#slideshow.active #slideshow-nav {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes bounceInDown {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        transform: translate3d(0, -100vh, 0);
+    }
+
+    40% {
+        transform: translate3d(0, 0.5vh, 0);
+    }
+
+    65% {
+        transform: translate3d(0, -0.2vh, 0);
+    }
+
+    80% {
+        transform: translate3d(0, 0.1vh, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#slideshow-top {
+    transform: translate3d(0, -20vh, 0);
+    opacity: 0;
+}
+
+#slideshow-top.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    animation-name: bounceInDown;
+    animation-duration: 0.5s;
+}
+
+/**
+   * Loading dots
+   */
+.spinner {
+    position: relative;
+    left: -9999px;
+    animation: dot-pulse 1.5s infinite linear;
+    animation-delay: .25s;
+    transform:translate(50vw, 50vh) translate(-130%, -130%);
+  }
+
+  .spinner:before, .spinner:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+  .spinner, .spinner:before, .spinner:after{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+
+  .spinner:before {
+    animation: dot-pulse 1.5s infinite linear;
+    animation-delay: 0s;
+    left:-20px;
+  }
+
+  .spinner:after {
+    animation: dot-pulse 1.5s infinite linear;
+    animation-delay: .5s;
+    left:20px;
+  }
+
+  @keyframes dot-pulse {
+    0% {
+      box-shadow: 9999px 0 0 -5px #FFF;
+    }
+    30% {
+      box-shadow: 9999px 0 0 2px #FFF;
+    }
+    60%,
+    100% {
+      box-shadow: 9999px 0 0 -5px #FFF;
+    }
+  }
+</style><style> .iframeClose {
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    background: url(/img/back-home.png) no-repeat 50%;
+    background-size: cover;
+    width: 51px;
+    height: 51px;
+    display: none;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .iframeClose.active {
+    display: block;
+  }</style><script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5671039626108784" type="text/javascript" crossorigin="anonymous" data-checked-head="true"></script><style>
+.pokiSdkContainer {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pokiSdkContainer.pokiSdkFixed {
+	position: fixed;
+}
+
+.pokiSdkContainer.pokiSdkVisible {
+	display: block;
+}
+
+.pokiSdkContainer.pokiSdkHidden,
+.pokiSdkSpinnerContainer.pokiSdkHidden {
+	display: none;
+}
+
+.pokiSdkContainer.pokiSdkHidden,
+.pokiSdkSpinnerContainer {
+	pointer-events: none;
+}
+
+.pokiSdkSpinnerContainer {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('https://a.poki.com/images/thumb_anim_2x.gif') 50% 50% no-repeat;
+	user-select: none;
+}
+
+.pokiSdkInsideContainer {
+	background: #000;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.pokiSdkContainer.pokiSdkVisible .pokiSdkInsideContainer {
+	opacity: 1;
+}
+
+.pokiSDKAdContainer, .pokiSdkVideoContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.pokiSdkStartAdButton {
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+
+	padding-top: 10%;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #FFF;
+
+	font: 700 15pt 'Arial', sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: 0.1s ease-in-out;
+	line-height: 1em;
+}
+
+.pokiSdkPauseButton {
+	cursor:pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.pokiSdkPauseButton:before {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	display: block;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	user-select: none;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: background-color 0.5s ease;
+	animation: 1s linear infinite pulse;
+}
+
+.pokiSdkPauseButton:after {
+	content: '';
+	position: absolute;
+	display: block;
+	box-sizing: border-box;
+	border-color: transparent transparent transparent #fff;
+	border-style: solid;
+	border-width: 26px 0 26px 40px;
+	pointer-events: none;
+	animation: 1s linear infinite pulse;
+	left: 6px;
+}
+.pokiSdkPauseButtonBG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    background: rgba(0, 43, 80, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.pokiSdkPauseButtonBG:hover{
+	background: rgba(0, 43, 80, 0.7);
+}
+
+@keyframes pulse {
+	0% {
+		transform: translate(-50%, -50%) scale(0.95);
+	}
+	70% {
+		transform: translate(-50%, -50%) scale(1.1);
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(0.95);
+	}
+}
+
+.pokiSdkProgressContainer {
+	background: #B8C7DD;
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	bottom: 0;
+	z-index: 9999;
+}
+
+.pokiSdkProgressBar {
+	position:relative;
+	bottom:0px;
+	background: #FFDC00;
+	height: 100%;
+	width: 0%;
+	transition: width 0.5s;
+	transition-timing-function: linear;
+}
+
+.pokiSdkProgressBar.pokiSdkVisible, .pokiSdkPauseButton.pokiSdkVisible, .pokiSdkStartAdButton.pokiSdkVisible {
+	display: block;
+	pointer-events: auto;
+}
+
+.pokiSdkProgressBar.pokiSdkHidden, .pokiSdkPauseButton.pokiSdkHidden, .pokiSdkStartAdButton.pokiSdkHidden {
+	display: none;
+	pointer-events: none;
+}
+</style><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=ubg365.github.io" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=ubg365.github.io"></script></head>
+
+<body data-new-gr-c-s-check-loaded="14.1098.0" data-gr-ext-installed="">
+    <script src="master-loader.js"></script><script src="poki-sdk.js"></script>
+
+
+
+
+
+
+<script src="https://ubg365.github.io/subway-surfers/unity.js"></script><div id="spinner" class="spinner"></div><div id="loader" style="display: none;"><div id="slideshow"><div id="slideshow-top" class="active"><img><div id="slideshow-top-container"><div id="game-title">Subway Surfers: San Francisco</div><div id="progress-spinner" class="spinner" style="display: flex;"><div class="bounce0"></div><div class="bounce1"></div><div class="bounce2"></div></div><div id="progress-container" class="done"><div id="progress-bar"><div id="progress-fill" style="width: 100%;"></div></div><div id="progress-amount" style="width: 12vh; white-space: nowrap;">100% of 35MB</div></div><div id="progress-comment">Preparing game...</div></div></div><div id="slideshow-images"></div><div id="slideshow-nav"></div></div></div><div id="game-container" style="display: block; width: 1182.22px; height: 665px; margin-left: -591.109px; margin-top: -332.5px;"><div id="game" style="padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);"><canvas id="#canvas" style="width: 100%; height: 100%; cursor: default;" width="1182" height="665"></canvas></div></div><div class="iframeClose active" id="iframeClose"></div><script src="UnityLoader.2019.2.js"></script><div class="pokiSdkContainer pokiSdkHidden pokiSdkFixed"><div class="pokiSdkInsideContainer"><div class="pokiSdkProgressContainer pokiSdkHidden"><div class="pokiSdkProgressBar" style="width: 0%;"></div></div><video id="pokiSDKVideoContainer" class="pokiSdkVideoContainer" playsinline="playsinline" muted="muted"></video><div id="pokiSDKAdContainer" class="pokiSDKAdContainer"></div></div><div class="pokiSdkSpinnerContainer"></div><div class="pokiSdkPauseButton pokiSdkHidden"><div class="pokiSdkPauseButtonBG"></div></div><div class="pokiSdkStartAdButton pokiSdkHidden">Tap anywhere to play ad</div></div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5671039626108784&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1672899599&amp;plat=9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32&amp;plas=307x525_l%7C307x600_r&amp;format=0x0&amp;url=https%3A%2F%2Fubg365.github.io%2Fsubway-surfers%2F&amp;ea=0&amp;pra=5&amp;wgl=1&amp;uach=WyJDaHJvbWUgT1MiLCIxNTI3OC43Mi4wIiwieDg2IiwiIiwiMTEwLjAuNTQ4MS4xODEiLFtdLGZhbHNlLG51bGwsIjY0IixbWyJDaHJvbWl1bSIsIjExMC4wLjU0ODEuMTgxIl0sWyJOb3QgQShCcmFuZCIsIjI0LjAuMC4wIl0sWyJHb29nbGUgQ2hyb21lIiwiMTEwLjAuNTQ4MS4xODEiXV0sZmFsc2Vd&amp;dt=1677613143065&amp;bpp=12&amp;bdt=1067&amp;idt=137&amp;shv=r20230223&amp;mjsv=m202302160101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=32922452362&amp;frm=20&amp;pv=2&amp;ga_vid=2046719618.1677612340&amp;ga_sid=1677613143&amp;ga_hid=1610400126&amp;ga_fc=1&amp;u_tz=-300&amp;u_his=3&amp;u_h=768&amp;u_w=1366&amp;u_ah=768&amp;u_aw=1366&amp;u_cd=24&amp;u_sd=1&amp;dmc=4&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1366&amp;bih=665&amp;scr_x=0&amp;scr_y=0&amp;eid=44759842%2C44759876%2C44759927%2C44777876%2C31072532%2C31072730%2C31071265&amp;oid=2&amp;pvsid=3347276122720826&amp;tmod=1214611293&amp;uas=0&amp;nvt=3&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1366%2C0%2C1366%2C768%2C1366%2C665&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=274" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe><script src="blob:https://ubg365.github.io/23bb2367-6f09-4ef3-930f-c3dc6c9c4383" id="eadbe96c0843fd336e4ba9802a8ebcad"></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20230223/r20190131/zrt_lookup.html" style="display: none;"></iframe></html>
